@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color:steelblue;
+        }
+        form{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        .img1{ display: block;
+            float: left;
+            height: 250px;
+            width: 200px;
+
+        }
+        .img2{ display: block;
+            float: right;
+            height: 250px;
+            width: 200px;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>QUIZ</h1>
+    <img class="img1" src="ocean/jelly.jpg" alt="">
+    <img class="img2" src="ocean/shark.jpg">
+
+    <form action="/submit_form" method="post">
+        
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+      
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <h2>LETS START</h2>
+
+        <label for="ocean_depth">~How deep is the Mariana Trench?~</label><br>
+        <select id="ocean_depth" name="ocean_depth">
+            <option value="36000">36,000 feet</option>
+            <option value="42000">42,000 feet</option>
+            <option value="28000">28,000 feet</option>
+            <option value="50000">50,000 feet</option>
+        </select><br><br>
+
+        <label for="ocean_percentage">~What percentage of the Earth's surface is covered by oceans?~</label><br>
+        <select id="ocean_percentage" name="ocean_percentage">
+            <option value="50">50%</option>
+            <option value="60">60%</option>
+            <option value="70">70%</option>
+            <option value="80">80%</option>
+        </select><br><br>
+        
+        <label for="largest_animal">~What is the largest animal in the ocean?~</label><br>
+        <select id="largest_animal" name="largest_animal">
+            <option value="blue_whale">Blue Whale</option>
+            <option value="great_white_shark">Great White Shark</option>
+            <option value="giant_squid">Giant Squid</option>
+        </select><br><br>
+        
+        <label for="ocean_currents">~How do ocean currents affect climate?~</label><br>
+        <select id="ocean_currents" name="ocean_currents">
+            <option value="regulate_temperature">They regulate temperature</option>
+            <option value="do_not_affect_climate">They do not affect climate</option>
+            <option value="create_storms">They create storms</option>
+            <option value="affect_tides">They affect tides</option>
+        </select><br><br>
+        
+        <label for="coral_reefs">~Why are coral reefs important?~</label><br>
+       
+        <select id="coral_reefs" name="coral_reefs">
+            <option value="biodiversity">They support biodiversity</option>
+            <option value="protect_shorelines">They protect shorelines</option>
+            <option value="tourism">They attract tourism</option>
+            <option value="all_of_the_above">All of the above</option>
+        </select><br><br>
+
+        <label for="ocean_life">~What percentage of life on Earth is found in the ocean?~</label><br>
+        <select id="ocean_life" name="ocean_life">
+            <option value="50">50%</option>
+            <option value="70">70%</option>
+            <option value="80">80%</option>
+            <option value="90">90%</option>
+        </select><br><br>
+        
+        <label for="largest_ocean">~What is the largest ocean on Earth?~</label><br>
+        <select id="largest_ocean" name="largest_ocean">
+            <option value="pacific">Pacific Ocean</option>
+            <option value="atlantic">Atlantic Ocean</option>
+            <option value="indian">Indian Ocean</option>
+            <option value="southern">Southern Ocean</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
